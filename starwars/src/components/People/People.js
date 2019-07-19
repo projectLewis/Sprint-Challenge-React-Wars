@@ -2,12 +2,10 @@ import React from "react";
 import { List, Segment } from "semantic-ui-react";
 
 const People = ({ characters }) => {
-  // console.log(characters);
-  // return <div>Test2</div>;
   return characters.map((character, idx) => {
     return (
       <>
-        <Segment>
+        <Segment style={{ marginTop: "14px" }}>
           <List>
             <List.Item>
               <List.Header>{character.name}</List.Header>
