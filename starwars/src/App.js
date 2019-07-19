@@ -24,7 +24,7 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
   if (characters.length === 0) {
-    return <div style={{ color: "red", fontSize: "72px" }}>Loading...</div>;
+    return <div style={{ color: "red", fontSize: "72px", display: 'flex', justifyContent: 'center', margin: '100px' }}>Loading...</div>;
   } else {
     return (
       <div className="App">

@@ -19,7 +19,6 @@ const PeopleWrapper = ({ characters }) => {
     <div>
       <Header as="h1" icon textAlign="center">
         <Icon name="space shuttle" inverted color={"red"} circular />
-        <Header.Content>Star Wars Top 10</Header.Content>
       </Header>
       <Container style={myStyle} fluid>
         <People characters={characters} />
