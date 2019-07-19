@@ -1,6 +1,6 @@
 import React from "react";
 import People from "../People/People";
-import { Header, Icon } from "semantic-ui-react";
+import { Container, Header, Icon } from "semantic-ui-react";
 
 const PeopleWrapper = ({ characters }) => {
   console.log(characters);
@@ -10,7 +10,12 @@ const PeopleWrapper = ({ characters }) => {
         <Icon name="space shuttle" inverted color={"red"} circular />
         <Header.Content>Star Wars Top 10</Header.Content>
       </Header>
-      <People characters={characters} />
+      <Container
+        style={{ width: "300px", opacity: "0.7", marginBottom: "20px" }}
+        fluid
+      >
+        <People characters={characters} />
+      </Container>
     </div>
   );
 };
